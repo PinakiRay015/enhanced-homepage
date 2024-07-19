@@ -1,0 +1,67 @@
+.myContainer{
+    background-color: crimson;
+    height: 100vh;
+}
+.myContainer nav #logo{
+    width: 15%;
+    height: auto;
+    margin: 0px;
+}
+
+.myContainer nav{
+    background-color: black;
+    padding: 0.3rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.myContainer ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 0px;
+}
+
+.myContainer li{
+    list-style: none;
+    color: #fb8500;
+    margin: 0px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.myContainer .messages{
+    border: 1px solid;
+    width: 30%;
+    height: 80%;
+    background-color: blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)  scale(0%);
+    z-index: 9;
+    transition: 0.2s all ease-in-out;
+}
+
+.messages button{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    padding: 10px 0px;
+    border: none; 
+}
+
+.messages .msg-box{
+    border: 1px solid;
+    height: fit-content;
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    transform: translateY(-20%);
+}
+.messages h4{
+    text-align: center;
+    margin: 1rem 0rem;
+}
+
