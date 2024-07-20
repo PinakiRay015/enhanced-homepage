@@ -1,29 +1,36 @@
-.myContainer{
-    background-color: crimson;
-    height: 100vh;
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(90deg, hsla(217, 45%, 40%, 1) 0%, hsla(225, 45%, 28%, 1) 100%);
+    object-fit: cover;
 }
-.myContainer nav #logo{
+
+.myContainer{
+    height: 100vh;
+    object-fit: cover;
+}
+nav #logo{
     width: 15%;
     height: auto;
     margin: 0px;
 }
 
-.myContainer nav{
+ nav{
     background-color: black;
     padding: 0.3rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
-.myContainer ul{
+ ul{
     display: flex;
     align-items: center;
     gap: 2rem;
     margin: 0px;
 }
 
-.myContainer li{
+li{
     list-style: none;
     color: #fb8500;
     margin: 0px;
@@ -31,7 +38,7 @@
     font-weight: 500;
 }
 
-.myContainer .messages{
+ .messages{
     border: 1px solid;
     width: 30%;
     height: 80%;
@@ -64,4 +71,11 @@
     text-align: center;
     margin: 1rem 0rem;
 }
+
+img{
+    width: 50%;
+    height: 90vh;
+}
+
+
 

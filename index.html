@@ -5,116 +5,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accordion with Hyperlinks</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- google fonts  -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="myContainer">
 
-    <!-- navbar section  -->
-    <nav>
-      <img id="logo" src="assets/logo.png" alt="">
-      <ul>
-        <li id="openMsg">Notifications</li>
-        <li>Theme</li>
-      </ul>
-    </nav>
+  <nav>
+    <img id="logo" src="assets/logo.png" alt="">
+    <ul>
+      <li id="openMsg">Notifications</li>
+      <li>Theme</li>
+    </ul>
+  </nav>
 
-    <!-- Notifications section  -->
-
-    <div class="messages">
-      <h4>Your Notifications</h4>
-      <div class="msg-box">
-        <p>The next test is scheduled for July 15th.</p>
-        <p>Interview scores are out for the first week of July</p>
-      </div>
-      <button id="closeMsg">Close</button>
+  <div class="messages">
+    <h4>Your Notifications</h4>
+    <div class="msg-box">
+      <p>The next test is scheduled for July 15th.</p>
+      <p>Interview scores are out for the first week of July</p>
     </div>
-
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-      <!-- accordion item 1 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-            <b>your task uploads</b>
-          </button>
-        </h2>
-        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">
-            <b>Please find the recording on how to submit your task files in the sheet</b> 
-            <!-- <code>.accordion-flush</code> class.  -->
-            <p> <a class='button' href="https://drive.google.com/file/d/12q2_Wwy13LcUVYeyNR0m7cMvSukyIipJ/view?usp=sharing" target="_blank"> Click here to check the video</a></p>
-            <p>You are required to share your task files with the following mentors:
-              <li> vivek : vivek@careerpedia.co</li>
-              <li>charan : charan@careerpedia.co</li>
-              <li>rohith : rohith@careerpedia.co</li>
-              <li>deepraj : deepraj@careerpedia.co</li>
-              <li>maniratnam: maniratnam@careerpedia.co</li>
-            </p>
-            <p>Kindly use below Sheet link to paste your file links.</p>
-              <a class="button" href="https://docs.google.com/spreadsheets/d/1EgJdIsdA21W2H6u-iGEfWofWAGefTEywlEX70Rhf5xo/edit?usp=sharing" target="_blank"> click here to upload the files</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- accordion item 2 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-            <b>Test links</b><marquee style="background-color: lightgoldenrodyellow; color: red; border-radius: 39px;">The next test is scheduled for July 15th.</marquee>
-          </button>
-        </h2>
-        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">
-            <h3><p>For Teams A to F</h3>
-              <li>Time: 7:30 AM</li>
-              <li>Please read the Instructions carefully before starting the test</li>
-                <a class="button" href="https://careerpediascores.github.io/mocktest/" target="_blank"> click here </a><br><br>
-            <h3><p>For Teams G and H<br></p></h3> 
-            <li>Time: 7:30 AM</li>
-              <li>Please read the Instructions carefully before starting the test</li>
-                <a class="button" href="https://careerpediascores.github.io/mocktest/" target="_blank"> click here </a>
-          </div>
-      </div>
-      </div>
-      <!-- accordion item 3 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-            <b>Results </b><marquee style="background-color: lightgoldenrodyellow; color: red; border-radius: 39px;">Interview scores are out for the first week of July</marquee>
-          </button>
-        </h2>
-        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">
-            <b><p>July 1st week mock interview scores</p></b>
-              <li>Enter your CP id to see your score</li><br>
-              <a class="button" href="https://careerpediascores.github.io/mockscores/" target="_blank"> click here</a>
-              <br>
-          <p>Check your id's here</p><br> 
-              <a class="button" href="https://docs.google.com/spreadsheets/d/1WYL7ibIQyubxhrKaAdHYjBxjn3I0zxTmVVE42VdJync/edit?gid=6661935#gid=6661935" target="_blank"> click here </a></div>
-        </div>
-      </div>
-      <!-- accordion item 4 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-            <b>Important docs</b>
-          </button>
-        </h2>
-        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">
-            
-            <button  onclick="window.open('./uploads/ExcelVBANotesForProfessionals.pdf')">Excel notes</button>
-            <button  onclick="window.open('./uploads/ExcelVBANotesForProfessionals.pdf')">python notes</button>
-          </div>
-        </div>
-  
-    </div>
-
+    <button id="closeMsg">Close</button>
   </div>
-  
+
+  <img src="assets/bg.svg" alt="">
+
   <script src="app.js"></script>
 
 </body>
