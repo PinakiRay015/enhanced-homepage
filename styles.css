@@ -18,10 +18,11 @@ nav #logo{
 
  nav{
     background-color: black;
-    padding: 0.3rem 2rem;
+    padding: 0rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 10vh;
 }
  ul{
     display: flex;
@@ -36,6 +37,41 @@ li{
     margin: 0px;
     cursor: pointer;
     font-weight: 500;
+}
+
+.main {
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    height: 90vh;
+    padding: 0rem 5rem;
+}
+
+.main .task-section{
+    height: 90vh;
+    width: 40%;
+    display: grid;
+    place-items: center;
+}
+
+.main .task-section img{
+    height: 3rem;
+}
+
+.main .user-activity{
+    width: 70%;
+}
+
+#task , #test, #results{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 3rem 0rem;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
 }
 
  .messages{
@@ -72,7 +108,7 @@ li{
     margin: 1rem 0rem;
 }
 
-img{
+#mainBg img{
     width: 50%;
     height: 90vh;
 }
